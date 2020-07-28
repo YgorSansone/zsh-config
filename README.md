@@ -1,5 +1,5 @@
 ![Print da tela]
-(https://github.com/YgorSansone/zsh-config/blob/master/Captura%20de%20tela%20de%202020-07-28%2011-36-01.png?raw=true)
+(https://github.com/YgorSansone/zsh-config/blob/master/Captura%20de%20tela%20de%202020-07-28%2011-36-01.png)
 ### zsh-config
 # GUIA DE CONFIGURAÇÃO
 ## https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive-5256424658e8
