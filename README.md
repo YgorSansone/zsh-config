@@ -11,4 +11,5 @@
 ## Copiar a fonte para a pasta: /usr/share/fonts/truetype
 ## Instalar o Powerlevel9k -  git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ## Fonte : Hack Nerds Regular 12
+## Instalar backnotify - git clone https://github.com/t413/zsh-background-notify.git ~/.zsh-background-notify
 #Só vai!
