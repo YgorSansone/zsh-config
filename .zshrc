@@ -8,6 +8,11 @@
 # Copiar a fonte para a pasta: /usr/share/fonts/truetype
 # Instalar o Powerlevel9k -  git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 # Fonte : Hack Nerds Regular 12
+# Instalar backnotify - git clone https://github.com/t413/zsh-background-notify.git ~/.zsh-background-notify
+# Add link simbolico - ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+# zsh default - sudo usermod --shell $(which zsh) <your_username>
+
+
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -126,4 +131,7 @@ source $HOME/.zsh-background-notify/bgnotify.plugin.zsh
 #alias yrp = "yarn run prod" 
 #alias gw = " relógio gole "
 #alias ls="colorls --sd -A"
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

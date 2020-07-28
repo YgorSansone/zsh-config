@@ -13,4 +13,5 @@
 ## Fonte : Hack Nerds Regular 12
 ## Instalar backnotify - git clone https://github.com/t413/zsh-background-notify.git ~/.zsh-background-notify
 ## Add link simbolico - ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+## zsh como default - sudo usermod --shell $(which zsh) <your_username> 
 #Só vai!
