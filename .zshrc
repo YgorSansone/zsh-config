@@ -8,28 +8,32 @@
 # Copiar a fonte para a pasta: /usr/share/fonts/truetype
 # Instalar o Powerlevel9k -  git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 # Fonte : Hack Nerds Regular 12
-# Instalar backnotify - git clone https://github.com/t413/zsh-background-notify.git ~/.zsh-background-notify
-# Add link simbolico - ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
-# zsh default - sudo usermod --shell $(which zsh) <your_username>
-
-
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+DEFAULT_USER='ygor'
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ygor/.oh-my-zsh"
+export ZSH="/home/caioissa/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#ZSH_THEME="powerlevel10k/powerlevel10k
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE="nerdfont-complete"
-POWERLEVEL9K_DISABLE_RPROMPT=true
+#POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="► "
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir_writable dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator ram  background_jobs)
+#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
+#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="white"
+#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_FOREGROUND="black"
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS = ()
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS = (status root_indicator background_jobs history time)
 # Set list of themes to pick from when loading at random
