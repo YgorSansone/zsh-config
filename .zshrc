@@ -14,8 +14,11 @@
 
 DEFAULT_USER='ygor'
 # Path to your oh-my-zsh installation.
-export ZSH="/home/caioissa/.oh-my-zsh"
-
+export PATH=$PATH:/Users/denis/.npm-global/bin
+export PATH="$HOME/.amplify/bin:$PATH"
+export ZSH="/home/ygor/.oh-my-zsh"
+export PATH=${PATH}:/opt/flutter/bin
+export PATH=$PATH:/usr/local/go/bin
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -139,3 +142,5 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+cowsay -f `ls /usr/share/cowsay/cows/ | sort -R | tail -n 1 | sed 's/.cow$//'` `fortune /usr/share/games/fortunes/brasil`
