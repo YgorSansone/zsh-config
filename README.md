@@ -16,3 +16,4 @@
 ## zsh como default - sudo usermod --shell $(which zsh) <your_username> 
 ## zsh como default ubuntu - sudo chsh -s /usr/bin/zsh root
 #Só vai!
+atualizar
